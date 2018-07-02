@@ -19,7 +19,7 @@
 	fetch('https://jsca.bc.ca/main/downld02.txt', {
 	 	mode: 'no-cors'
 	}).then(function(response) {
-		return response.split("\n");
+		return response.text().split("\n");
 	}).then(function(myJson) {
 		for(var x in n) {   
 	    		n[x]= '>'+n[x]; 
