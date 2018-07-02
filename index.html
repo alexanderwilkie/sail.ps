@@ -5,6 +5,10 @@
 <!-- Load the Paper.js library -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.min.js"></script>
 <script type="text/paperscript" canvas="myCanvas">
+
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	
 	// Create a Paper.js Path to draw a line into it:
 	var path = new Path();
 	// Give the stroke a color
@@ -65,7 +69,7 @@
 		});
 	}).then(function(myJson) {
 		for(var x in myJson) {   
-	    		console.log(n[x]);
+	    		console.log(myJson[x]);
 		}
 	});
 </script>
