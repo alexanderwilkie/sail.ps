@@ -15,6 +15,15 @@
 	// Note the plus operator on Point objects.
 	// PaperScript does that for us, and much more!
 	path.lineTo(start + [ 100, -50 ]);
+	
+	fetch('http://example.com/movies.json').then(function(response) {
+		return response.split("\n");
+	}).then(function(myJson) {
+		for(var x in n) {   
+	    		n[x]= '>'+n[x]; 
+	    		console.log(myJson);
+		}
+	});
 </script>
 </head>
 <body>
