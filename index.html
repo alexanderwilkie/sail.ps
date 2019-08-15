@@ -289,7 +289,7 @@
 		window.onload = function() {
 
 			var promise1 = getWndData('static/data/blob.txt');
-			var promise2 = getGPXData(map, 'static/data/Evening_run.gpx');
+			var promise2 = getGPXData(map, 'static/data/Evening_Run.gpx');
 
 			Promise.all([promise1, promise2]).then(function(values) {
 
