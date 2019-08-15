@@ -299,6 +299,8 @@
 				var parser = new GPXParser(gpxdata, map);
 				var [startDate, endDate] = parser.getStartEndDate();
 
+				map.setCenter(parser.getTrackSegmentAtDate(startDate));
+
 				var wnddata_rel = [];
 				var max_wind = 0;
 				var min_wind = 0;
